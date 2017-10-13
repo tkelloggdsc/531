@@ -17,9 +17,9 @@ production docker within the AWS Cloud Formation system.
 
 * build cloud formation stack for the first time:
 
-    aws cloudformation create-stack --stack-name fivethreeone --template-body file://$PWD/stack.yml --region us-east-2
+    `aws cloudformation create-stack --stack-name fivethreeone --template-body file://$PWD/stack.yml --region us-east-2`
 
 * view stack resources
 
-    aws cloudformation describe-stack-resources --stack-name fivethreeone --region us-east-2
+    `aws cloudformation describe-stack-resources --stack-name fivethreeone --region us-east-2`
 
