@@ -19,7 +19,7 @@ production docker within the AWS Cloud Formation system.
 
 * build cloud formation stack for the first time:
 
-      aws cloudformation create-stack --stack-name fivethreeone --template-body file://$PWD/stack.yml --region us-east-1 --parameters ParameterKey=DBUser,ParamaterValue=[REDACTED] ParameterKey=DBPass,ParameterValue=[REDACTED]
+      aws cloudformation create-stack --stack-name fivethreeone --template-body file://$PWD/stack.json --region us-east-1 --parameters file://$PWD/.env.production.json
 
 * view stack resources
 
